@@ -1,49 +1,173 @@
-# delwarca-optimising-customer-support
-Analysis and optimisation of call center operations at Delwarca Software's Remote Support Unit, leveraging business analysis and simulation modelling to improve customer service and resource utilisation. 
+# Customer Support Operations Optimisation
+## *Call center optimisation project for a B2B software support environment*
 
-# Optimising Customer Support Operations at Delwarca Software 
+#Overview
 
-## Executive Summary:
-This project presents a comprehensive Business Analysis and Operational Research initiative focused on optimising the call handling operations of Delwarca Software's Remote Support Unit (RSU). The RSU was facing escalating customer dissatisfaction due to persistent long wait times and operational inefficiencies, despite the implementation of a new "Rapid ID" call routing procedure. This analysis aims to diagnose the root causes of these issues, evaluate the performance of existing systems, and propose data-driven solutions to enhance customer service, optimise resource utilisation, and improve overall operational efficiency. 
+This project demonstrates how data-driven operations analytics can be applied to optimise customer support performance in a high-volume technical call center environment.
 
-## Business Problem:
-Delwarca software's RSU, responsible for providing technical support, observed a decline in customer satisfaction directly linked to extended wait times. The "Rapid ID" system, intended to streamline calls by triaging them through "Director Associates", failed to significantly alleviate customer frustration and, in some aspects, exacerbated workload imbalances among support staff. The project addresses the critical need to identify effective strategies to reduce customer queuing times, optimise the allocation of Associates and Senior Associates, and restore positive customer perception within budgetary constraints. 
+Working with a simulated Remote Support Unit (RSU) at Delwarca Software, I analysed why customer wait times and dissatisfaction persisted despite the introduction of a new “Rapid ID” call routing process.
 
+Using:
 
-## Project Objectives:
-* To conduct a thorough analysis of the "Pre-Rapid ID" and "Rapid ID" call handling processes.
-* To identify and quantify operational bottlenecks and inefficiencies within the RSU.
-* To assess the utilisation rates and workload distribution of Associates and Senior Associates.
-* To leverage simulation modelling to validate current system performance and test alternative operational strategies.
-* To propose data-backed recommendations for process re-engineering and resource optimisation to improve customer satisfaction and RSU efficiency.
+- Business process mapping
 
-## Methodology and Approach:
-The project adopted a structured Business Analysis approach combined with quantitative and simulation-based methodologies:
-1. **Problem Definition and Stakeholder Contextualisation**: Initial investigation into customer feedback, managemet directives, and staff concerns to fram the core business problem and understand diverse stakeholder perspectives.
-2. **Current State Process Mapping**: Detailed mapping of "Pre-Rapid ID" and "Rapid ID" call flows, including customer journey paths, decision points, and agent interactions, to visualise existing processes and identify pain points.
-3. **Data Analysis and Root Cause Identification**: Utilised provided operational data (call arrival rates, hold times, talk times, resolution rates, staff schedules, and individual productivity) to perform a quantitative analysis. This involved calculating capacity, utilisation rates, and throughput to idemtify the precise drivers of delays and resource imbalances.
-4. **Operational Research and Simulation Modelling**: Employed discrete-event simulation software (Simul8) to build accurate models of the RSU's call center operations under both the "Pre-Rapid ID" and "Rapid ID" configurations. This allowed for the validation of observed problems and the rigorous testing of hypothetical alternative process flows and resource allocation strategies.
-5. **Solution Generation and Impact Assessment**: Based on analytical findings and simulation results, alternative operational models were developed. These models were then quantitatively assessed for their projected impact on key metrics such as average queueimg time, agent utilisation, and call resolution efficiency.
+- Operational data analysis
 
+- Queueing theory and capacity analysis
 
-## Key Analysis and Highlights:
-* Analysis revealed a paradox where initial hold times might have improved, but overall talk times and the rate of escalation to Senior Associates increased significantly under "Rapid ID".
-* Quantification of Senior Associate workload demonstrated their over-utilisation and confirmed high customer wait times for their expertise, leading to frustration.
-* Identified the unconstrained request for specific Senior Associates as a major contributor to queueing unpredictability and inefficient capacity planning.
-* Simulations provided empirical evidence of how alternative call routing and resource management strategies could drastically reduce customer wait times and optimise staff deployment.
+- Discrete-event simulation modelling
 
-## Tools Utilised:
-* **Simul8**: For discrete-event simulation modelling, scenario analysis, and performance prediction of call center operations.
-* **Microsoft Excel**: For data organisation, preliminary calculations, and visualisations of operational metrics.
-* **Lucidchart**: For visual representation of "as-is" and "to-be" call handling processes.
+The goal was to identify true operational bottlenecks, balance agent and senior associate workloads, and design practical, data-backed process improvements that reduce customer wait times and improve service efficiency without increasing headcount.
 
-## Demonstrated Skills:
-* Business Process Analysis and Re-engineering
-* Operational Research and Optimisation
-* Queueing Theory Application
-* Data-Driven Problem Solving
-* Discrete-Event Simulation Modelling
+# Business Problem
 
-## Visualisations
-* **Figure 1**: [Pre-Rapid ID Call Handling Process](https://github.com/aarushijain16/delwarca-optimising-customer-support/blob/main/Pre-Rapid%20ID.png)
-* **Figure 2**: [Rapid ID Call Handling Process](https://github.com/aarushijain16/delwarca-optimising-customer-support/blob/main/Rapid%20ID.png)
+Delwarca Software’s Remote Support Unit was facing:
+
+- Persistent long customer wait times
+
+- Declining customer satisfaction
+
+- Overloaded Senior Associates despite available capacity elsewhere
+
+- Limited visibility into true operational bottlenecks
+
+The newly introduced “Rapid ID” process was intended to speed up resolution by routing calls through Director Associates, but instead:
+
+- Increased escalation to Senior Associates
+
+- Created uneven workload distribution
+
+- Made queue times unpredictable
+
+Key questions addressed:
+
+- Why did wait times remain high despite process changes?
+
+- Where were the real capacity constraints in the system?
+
+- How were Associates vs. Senior Associates being utilised?
+
+- Which operational changes would actually improve customer experience?
+
+# Solution Approach
+
+I designed a structured, data-driven operational analysis supported by simulation modelling.
+
+🔹 Process Analysis & Current-State Mapping
+
+- Mapped “Pre-Rapid ID” vs. “Rapid ID” call flows
+
+- Identified decision points, escalations, and customer pain areas
+
+- Visualised agent handoffs and queue dependencies
+
+🔹 Operational Data Analysis
+
+- Analysed call arrival rates, hold times, talk times, and resolution rates
+
+- Calculated capacity, utilisation, and throughput by role
+
+- Identified true drivers of queue buildup and delays
+
+🔹 Queueing & Resource Bottleneck Analysis
+
+- Assessed workload distribution across Associates and Senior Associates
+
+- Identified over-utilisation of Senior Associates as the critical constraint
+
+- Highlighted risks of unconstrained requests for specific experts
+
+🔹 Simulation Modelling (What-if Scenarios)
+
+- Built discrete-event simulation models using Simul8
+
+- Validated real-world issues observed in operations
+
+- Tested alternative routing rules and staffing strategies
+
+- Quantified impact on wait times, utilisation, and resolution efficiency
+
+# Key Business Insights and Strategic Impact
+*(Translated for customer support and operations teams)*
+
+- Rapid ID reduced initial hold time but increased overall handling time
+ → End-to-end flow optimisation matters more than first-response speed
+
+- Senior Associates became the system bottleneck
+ → Expertise concentration drove long queues and customer frustration
+
+- Unrestricted requests for specific Senior Associates caused queue volatility
+ → Poor predictability made capacity planning ineffective
+
+- Simulation showed alternative routing strategies could significantly reduce wait times
+ → Process redesign delivered higher impact than adding headcount
+
+# Strategic Recommendations
+
+- Introduce controlled routing to Senior Associates based on issue complexity
+
+- Redesign escalation logic to reduce unnecessary handoffs
+
+- Balance workload across Associates before escalation
+
+- Use simulation modelling before rolling out operational changes
+
+- Track utilisation and queue metrics continuously, not reactively
+
+# Tools and Technologies
+
+- Simul8 (Discrete-event simulation & scenario testing)
+
+- Microsoft Excel (Operational data analysis & calculations)
+
+- Lucidchart (As-is and to-be process mapping)
+
+- Queueing theory and capacity modelling
+
+# Why this Matters for Operations Teams
+
+This project shows how analytics can:
+
+- Diagnose hidden operational bottlenecks
+
+- Improve customer experience without increasing costs
+
+- Support evidence-based process redesign
+
+- Reduce risk before implementing large-scale changes
+
+The same approach can be applied to:
+
+- Customer support and call centers
+
+- Shared service operations
+
+- Tech support and BPO environments
+
+- Any queue-based service system
+
+# 📌 Note
+
+This project is based on a simulated business case using representative operational data to mirror real-world call center constraints and decision-making scenarios.
+
+# 💬 How I Can Help You
+
+If your team wants to:
+
+- Reduce customer wait times
+
+- Optimise support team utilisation
+
+- Test operational changes before implementation
+
+- Make data-driven service design decisions
+
+I can apply this framework to your real operational data and deliver:
+
+- Bottleneck and capacity analysis
+
+- Simulation-based scenario testing
+
+- Clear, actionable operational recommendations
+
+- Decision-ready dashboards and insights
