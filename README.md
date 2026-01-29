@@ -1,7 +1,7 @@
 # Customer Support Operations Optimisation
 ## *Call center optimisation project for a B2B software support environment*
 
-#Overview
+# Overview
 
 This project demonstrates how data-driven operations analytics can be applied to optimise customer support performance in a high-volume technical call center environment.
 
